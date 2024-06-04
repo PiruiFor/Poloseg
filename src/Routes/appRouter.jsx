@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import HomePage from '../Components/HomePage.jsx';
+import { HomePage } from '../Components/HomePage.jsx'
 import { Login } from '../Components/Login/Login.jsx';
 import { Permisos } from '../components/formularios/Permisos';
 import { MostrarForms } from '../components/formularios/MostrarForms';
 import { Register } from '../Components/Register/Register.jsx';
 import { PanelControl } from '../components/PanelControl/PanelControl.jsx';
+import PublicRoutes from './PublicRoutes.jsx'
 import PrivateRoutes from './PrivateRoutes'
 import AdminRoutes from './AdminRoutes';
 import SupervisorRoutes from './SupervisorRoutes.jsx'
@@ -21,9 +22,12 @@ export const AppRouter = () => {
     <>
     <Router>
           <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path='/login' element= {<Login/>}/>
-            
+
+            <Route element = {<PublicRoutes/>}>
+              <Route path="/" element={<HomePage/>} />
+              <Route path='/login' element= {<Login/>}/>
+            </Route>
+
             <Route element={<> <Aside/> <HeaderTool/> <PrivateRoutes/> </>}>
 
             <Route element={<AdminRoutes/>}>
