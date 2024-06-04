@@ -1,0 +1,29 @@
+.revelar {
+    position: absolute;
+    top: 53.5%;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .roles{
+    height: 50px;
+    background: transparent;
+    color: black;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  .p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  #crear{
+    display: grid;
+    place-items: center;
+  }

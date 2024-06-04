@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    flex-direction: column;
+    box-shadow: #333;
+    gap: 10px;
+    background: #ffffff;
+    box-shadow: 9px 9px 33px #918686, -9px -9px 33px #ffffff;
+    padding: 34px;
+    width: 400px;
+    height: 600px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .fondopag{
+    background: white;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+  }
+
+  .form-h2{
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 30px 0px ;
+    font-weight: 700;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+  }
