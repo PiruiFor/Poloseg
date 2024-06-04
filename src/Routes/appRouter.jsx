@@ -6,6 +6,7 @@ import { MostrarForms } from '../components/formularios/MostrarForms';
 import { Register } from '../Components/Register/Register.jsx';
 import { PanelControl } from '../components/PanelControl/PanelControl.jsx';
 import PrivateRoutes from './PrivateRoutes'
+import PublicRoutes from './PublicRoutes'
 import AdminRoutes from './AdminRoutes';
 import SupervisorRoutes from './SupervisorRoutes.jsx'
 import OperarioRoutes from "./OperarioRoutes"
@@ -22,8 +23,10 @@ export const AppRouter = () => {
     <Router>
           <Routes>
 
+            <Route element={<PublicRoutes/>}>
             <Route path="/" element={<HomePage/>} />
             <Route path='/login' element= {<Login/>}/>
+            </Route>
             
             <Route element={<> <Aside/> <HeaderTool/> <PrivateRoutes/> </>}>
 
